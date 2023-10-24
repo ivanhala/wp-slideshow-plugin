@@ -9,7 +9,7 @@
  *  SlideshowFrotendScripsStylesTest.
  */
 class SlideshowFrotendScripsStylesTest extends WP_UnitTestCase {
-    public function setUp(): void {
+    protected function before_test() {
         parent::setUp();
         $this->class_instance = new IH_Slideshow();
         do_action('wp_enqueue_scripts');
@@ -17,6 +17,8 @@ class SlideshowFrotendScripsStylesTest extends WP_UnitTestCase {
     }
     
     public function test_scripts() {
+
+        
         // bxslider script must be registered
         $this->assertTrue( wp_script_is( 'bxslider', 'registered' ) );
 

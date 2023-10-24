@@ -9,13 +9,15 @@
  *  SlideshowAdminScripsStylesTest.
  */
 class SlideshowAdminScripsStylesTest extends WP_UnitTestCase {
-    protected function setUp(): void {
+    protected function before_test()  {
         parent::setUp(); 
         set_current_screen( 'dashboard' );    
         $this->class_instance = new IH_Slideshow();
     }
     
     public function test_scripts() {
+        $this->before_test();
+        
         do_action('admin_enqueue_scripts');
         // script must be registered  
         $this->assertTrue(  wp_script_is( 'slideshow-admin', 'registered' ) );
