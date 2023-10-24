@@ -8,8 +8,13 @@
 /**
  *  SlideshowShortcodeTest.
  */
-class SlideshowShortcodeTest extends WP_UnitTestCase {
-    protected function setUp(): void {
+class SlideshowShortcodeTest extends WP_UnitTestCase {    
+    /**
+     * setUp
+     *
+     */
+    protected function setUp()
+    {
         parent::setUp();
 
         $this->class_instance = new IH_Slideshow();
