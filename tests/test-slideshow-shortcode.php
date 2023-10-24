@@ -13,8 +13,7 @@ class SlideshowShortcodeTest extends WP_UnitTestCase {
      * setUp
      *
      */
-    protected function before_test();
-    {
+    protected function before_test() {
         parent::setUp();
         $this->class_instance = new IH_Slideshow();
     }
