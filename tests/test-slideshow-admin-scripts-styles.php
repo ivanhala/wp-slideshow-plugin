@@ -9,7 +9,7 @@
  *  SlideshowAdminScripsStylesTest.
  */
 class SlideshowAdminScripsStylesTest extends WP_UnitTestCase {
-    public function setUp(): void {
+    protected function setUp(): void {
         parent::setUp(); 
         set_current_screen( 'dashboard' );    
         $this->class_instance = new IH_Slideshow();
