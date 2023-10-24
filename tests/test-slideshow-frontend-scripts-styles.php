@@ -18,6 +18,7 @@ class SlideshowFrotendScripsStylesTest extends WP_UnitTestCase {
     
     public function test_scripts() {
 
+        $this->before_test();
         
         // bxslider script must be registered
         $this->assertTrue( wp_script_is( 'bxslider', 'registered' ) );
