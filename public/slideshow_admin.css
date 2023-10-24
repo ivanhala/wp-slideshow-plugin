@@ -1,0 +1,46 @@
+.slideshow_admin_image{
+    max-width: 150px;
+}
+li.ui-state-default.ui-sortable-handle {
+    margin: 5px;
+}
+.slideshow_thumbnail_centered{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+.slideshow_thumbnail_centered img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: move;
+}
+#slideshow_sortable_container{
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 90%;
+    padding: 20px;
+}
+#slideshow_sortable{
+    display: block;
+    list-style: none !important;
+}
+.dashicons-dismiss{
+    font-size: 25px !important;
+    color: #b51111  !important;
+    cursor: pointer !important;
+}
+#slideshow_save_settings{
+    display: block;
+    float: left;
+    font-size: 28px;
+    margin-top: 50px;
+    position: relative;
+}
+.slideshow_save_result{
+    display: block;
+    font-size: 28px;
+    margin-top: 10px;
+    clear: both;
+}
