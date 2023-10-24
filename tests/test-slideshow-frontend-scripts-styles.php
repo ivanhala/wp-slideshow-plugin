@@ -9,7 +9,7 @@
  *  SlideshowFrotendScripsStylesTest.
  */
 class SlideshowFrotendScripsStylesTest extends WP_UnitTestCase {
-    public function setUp() {
+    public function setUp(): void {
         parent::setUp();
         $this->class_instance = new IH_Slideshow();
         do_action('wp_enqueue_scripts');
