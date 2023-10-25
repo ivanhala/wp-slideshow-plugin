@@ -34,4 +34,5 @@ Demo project showing WordPress plugins development skills.
 
 1. Saving options can be implemented using form submission (standard approach). Saving using REST API was added to demonstrate skills and for a better UI/UX.
 2. In the test classes the method `setUp()` can be used instead of  `before_test()`. The method `setUp()` was not used due to compatibility issues with the *PHPUnit Polyfills*.
+3. The slideshow settings page can be added as a sub-page of WordPress Settings.
 
