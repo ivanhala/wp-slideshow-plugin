@@ -11,7 +11,7 @@ Demo project showing WordPress plugins development skills.
 
 ### Usage
 * In the WordPress dashboard menu open the __Slideshow Settings__ page
-* Click on the __Add images__ botton
+* Click on the __Add images__ button
 * Choose images
 * Click on the  __Save images__ button
 * Add the following shortcode on the page/post: `myslideshow`
