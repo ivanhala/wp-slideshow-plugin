@@ -57,7 +57,7 @@ jQuery(function ($) {
                 .delay(3000)
                 .fadeOut('slow', function () {
                     jQuery(this.remove());
-                });
+             }); 
         });
         
     });
