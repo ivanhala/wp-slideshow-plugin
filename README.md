@@ -14,7 +14,7 @@ Demo project showing WordPress plugins development skills.
 * Click on the __Add images__ botton
 * Choose images
 * Click on the  __Save images__ button
-* Add the following shortocde on the page/post: `myslideshow`
+* Add the following shortcode on the page/post: `myslideshow`
 
 ---
 
@@ -32,6 +32,6 @@ Demo project showing WordPress plugins development skills.
 
 #### Possible alternative approaches
 
-1. Saving options can be implemented using form submition (standart approach). Saving using REST API was added to demonstrate skills and for a better UI/UX.
+1. Saving options can be implemented using form submission (standard approach). Saving using REST API was added to demonstrate skills and for a better UI/UX.
 2. In the test classes the method `setUp()` can be used instead of  `before_test()`. The method `setUp()` was not used due to compatibility issues with the *PHPUnit Polyfills*.
 
