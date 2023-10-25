@@ -153,7 +153,7 @@ class IH_Slideshow_Admin
      * @return void
      */
     public function save_settings_permission(){
-          return current_user_can( 'manage_options' );
+        return current_user_can( 'manage_options' );
             
     }
 }
