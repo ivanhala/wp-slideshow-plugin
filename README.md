@@ -5,11 +5,11 @@
 Demo project showing WordPress plugins development skills.
 
 
-###Demo
+### Demo
 [Slideshow front-end page](https://staging2.webbatesting.site/sample-page/)
 
 
-###Usage
+### Usage
 * In the WordPress dashboard menu open the __Slideshow Settings__ page
 * Click on the __Add images__ botton
 * Choose images
@@ -18,8 +18,8 @@ Demo project showing WordPress plugins development skills.
 
                 
 ----
-###Development notes
-####Skills used
+### Development notes
+#### Skills used
 * OOP
 * REST API
 * jQuery
@@ -30,7 +30,7 @@ Demo project showing WordPress plugins development skills.
 * Media library
 * Plugin integration testing
 
-####Possible alternative approaches
+#### Possible alternative approaches
 
 1. Saving options can be implemented using form submition (standart approach). Saving using REST API was added to demonstrate skills and for a better UI/UX.
 2. In the test classes the method `setUp()` can be used instead of  `before_test()`. The method `setUp()` was not used due to compatibility issues with the *PHPUnit Polyfills*.
