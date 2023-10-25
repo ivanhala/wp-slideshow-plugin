@@ -16,8 +16,8 @@ Demo project showing WordPress plugins development skills.
 * Click on the  __Save images__ button
 * Add the following shortocde on the page/post: `myslideshow`
 
-                
 ----
+
 ### Development notes
 #### Skills used
 * OOP
