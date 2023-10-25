@@ -32,9 +32,7 @@ jQuery(function ($) {
                 urls.push( jQuery(this).find('img').attr('src') );
             }
         });
-        if( urls.length == 0 ){
-            return;
-        }
+ 
         button.attr('value', slideshowl10n.saving_images );
         button.prop('disabled', true);
         jQuery('.slideshow_save_result').remove();
@@ -55,6 +53,11 @@ jQuery(function ($) {
         .always(function() {
             button.prop('disabled', false);
             button.attr('value', regular_value );
+            jQuery('.slideshow_save_result')
+                .delay(3000)
+                .fadeOut('slow', function () {
+                    jQuery(this.remove());
+                });
         });
         
     });

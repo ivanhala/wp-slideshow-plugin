@@ -76,7 +76,7 @@ class IH_Slideshow_Admin
      */
     function slideshow_plugin_settings_init() {
         register_setting('slide-show-plugin-settings-group', 'slideshow_images', array( $this, 'slideshow_images_validate' ) );
-        add_settings_section('slide-show-plugin-settings-section', 'General Settings', array( $this, 'slideshow_plugin_section_text' ), 'slide-show-plugin-settings' );
+        add_settings_section('slide-show-plugin-settings-section', __( 'Slideshow Settings', 'slideshow' ), array( $this, 'slideshow_plugin_section_text' ), 'slide-show-plugin-settings' );
         add_settings_field('slide-show-plugin-images', 'Images', array( $this, 'slideshow_images_render' ), 'slide-show-plugin-settings', 'slide-show-plugin-settings-section' );
     }
     
@@ -134,9 +134,8 @@ class IH_Slideshow_Admin
      * @return WP_REST_Response
      */
     public function save_settings( $request ){
-        error_log( var_export( $request, true ) );
         $urls = $request['urls'];
-        if( !is_array( $urls ) || ( is_array( $urls ) && count( $urls ) == 0 ) ){
+        if( !is_array( $urls ) ){
             return new \WP_REST_Response( array ( 'message' => __( 'Error: passed URLs are wrong.', 'slideshow' ) ), 400 );
         }
         foreach( $urls as $key => $url ){
