@@ -144,7 +144,7 @@ class IH_Slideshow_Admin
             }
         }         
         update_option( 'slideshow_images', $urls );
-        return new \WP_REST_Response( array ( 'message' => __( 'Images saved succesfully!', 'slideshow' ) ), 200 );
+        return new \WP_REST_Response( array ( 'message' => __( 'Images saved successfully!', 'slideshow' ) ), 200 );
     }
     
     /**
